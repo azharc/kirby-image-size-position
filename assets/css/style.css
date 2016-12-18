@@ -1,0 +1,50 @@
+div#js-field-position {
+  display: none;
+}
+
+div.position-wrapper {
+  border: 2px solid #ddd;
+  width: 429px;
+  position: absolute;
+  top: -999px;
+  left: -999px;
+}
+
+@media only screen 
+and (min-width: 1440px) {
+	div.position-wrapper {
+		position: static;
+	}
+
+	div.field-name-position div.field-help {
+		display: none;
+	}
+}
+
+div.interact-container {
+  position: relative;
+}
+
+div#grid-snap {
+  opacity: 0;
+  transition: opacity 1s;
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  color: #666;
+  font-size: 1em;
+}
+
+div#grid-snap.loaded {
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+div#grid-snap p {
+	display: none;
+}
+
+div#grid-snap p:after {
+	content: ' % ';
+	color: #888;
+}
